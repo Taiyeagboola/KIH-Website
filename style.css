@@ -125,6 +125,27 @@ header .hero .btn button:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 60px 60px;
+    background: url(./images/background.png) no-repeat;
+    background-size: contain;
+  }
+  header ul {
+    gap: 1rem;
+  }
+  header .logo img {
+    margin-top: -10px;
+    height: 50%;
+    width: 50%;
+  }
+  header .navbar {
+    margin-top: 0;
+  }
+  header .navbar li {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 375px) {
   :root {
     --hero-bg-color: rgb(29, 158, 235);
@@ -151,10 +172,25 @@ header .hero .btn button:hover {
     justify-content: space-between;
   }
   header .mobile-nav .mobile-logo {
-    width: 30%;
+    width: 50%;
   }
-  .hero {
-    display: none;
+  header .hero {
+    margin-top: 70px;
+    width: 100%;
+  }
+  header .hero .text-body h1 {
+    font-size: 16px;
+  }
+  header .hero .btn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 40px;
+  }
+  header .hero .btn button {
+    padding: 10px 27px;
+    font-size: 10px;
   }
 }
 main .our-work {
