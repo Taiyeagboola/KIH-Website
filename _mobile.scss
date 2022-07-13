@@ -1,0 +1,33 @@
+@media screen and (max-width: 375px) {
+	:root {
+		--hero-bg-color: rgb(29, 158, 235);
+		--px: 25px; /*padding left n right*/
+		--mb: 100px; /* margin bottom*/
+	}
+	.main-container {
+		max-width: 375px;
+		margin: auto;
+	}
+	header {
+		min-height: 100%;
+		background: url(./images/mobile-bg.png);
+		background-size: cover;
+		padding: 25px var(--px);
+		margin-bottom: var(--mb);
+		.navigation {
+			display: none;
+		}
+
+		.mobile-nav {
+			display: block;
+			display: flex;
+			justify-content: space-between;
+			.mobile-logo {
+				width: 30%;
+			}
+		}
+	}
+	.hero {
+		display: none;
+	}
+}

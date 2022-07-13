@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--hero-bg-color: rgb(29, 158, 235);
+	--px: 100px; /*padding left n right*/
+	--mb: 100px; /* margin bottom*/
+	--fs: "Edu SA Beginner", cursive;
+	--nav-li: "Montserrat", sans-serif;
+	--headings: "Josefin Sans", sans-serif;
+	--h1: "Alata", sans-serif;
+}
+
+p {
+	font-family: var(--fs);
+}
+li {
+	font-family: var(--nav-li);
+}
+
+h1 {
+	font-family: var(--nav-li);
+}
+
+body {
+	background: #ece9e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffffff,
+		#ece9e6
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#ece9e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+	max-width: 1440px;
+	margin: auto;
+}
+
+header {
+	min-height: 100%;
+	background: url(./images/background.png);
+	background-size: cover;
+	padding: 60px var(--px);
+	margin-bottom: var(--mb);
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.navbar {
+			margin-top: -70px;
+			ul {
+				display: flex;
+				list-style: none;
+				gap: 2rem;
+				.button {
+					margin-top: -18px;
+					background-image: linear-gradient(
+						to right,
+						#000428 0%,
+						#004e92 51%,
+						#000428 100%
+					);
+					border: none;
+					transition: 0.5s;
+					background-size: 200% auto;
+					color: white;
+					box-shadow: 0 0 20px #eee;
+					padding: 15px 32px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+					border-radius: 40px;
+					cursor: pointer;
+					&:hover {
+						background-position: right center; /* change the direction of the change here */
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				a {
+					text-decoration: none;
+					color: white;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.hero {
+		margin-top: 170px;
+		width: 50%;
+		margin-bottom: 30px;
+		h1 {
+			color: white;
+			font-weight: 300;
+			font-size: 3rem;
+			font-family: var(--h1);
+		}
+		.btn {
+			display: flex;
+			gap: 2.5rem;
+			margin-top: 70px;
+			button {
+				background-image: linear-gradient(
+					to right,
+					#000428 0%,
+					#004e92 51%,
+					#000428 100%
+				);
+				border: none;
+				transition: 0.5s;
+				background-size: 200% auto;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 40px;
+				cursor: pointer;
+				&:hover {
+					background-position: right center; /* change the direction of the change here */
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

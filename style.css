@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hero-bg-color: rgb(29, 158, 235);
+  --px: 100px; /*padding left n right*/
+  --mb: 100px; /* margin bottom*/
+  --fs: "Edu SA Beginner", cursive;
+  --nav-li: "Montserrat", sans-serif;
+  --headings: "Josefin Sans", sans-serif;
+  --h1: "Alata", sans-serif;
+}
+
+p {
+  font-family: var(--fs);
+}
+
+li {
+  font-family: var(--nav-li);
+}
+
+h1 {
+  font-family: var(--nav-li);
+}
+
+body {
+  background: #ece9e6; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ece9e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+header {
+  min-height: 100%;
+  background: url(./images/background.png);
+  background-size: cover;
+  padding: 60px var(--px);
+  margin-bottom: var(--mb);
+}
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navigation .navbar {
+  margin-top: -70px;
+}
+header .navigation .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header .navigation .navbar ul .button {
+  margin-top: -18px;
+  background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%);
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+header .navigation .navbar ul .button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+header .navigation .navbar ul a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+header .mobile-nav {
+  display: none;
+}
+header .hero {
+  margin-top: 170px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+header .hero h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: var(--h1);
+}
+header .hero .btn {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 70px;
+}
+header .hero .btn button {
+  background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%);
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+header .hero .btn button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --hero-bg-color: rgb(29, 158, 235);
+    --px: 25px; /*padding left n right*/
+    --mb: 100px; /* margin bottom*/
+  }
+  .main-container {
+    max-width: 375px;
+    margin: auto;
+  }
+  header {
+    min-height: 100%;
+    background: url(./images/mobile-bg.png);
+    background-size: cover;
+    padding: 25px var(--px);
+    margin-bottom: var(--mb);
+  }
+  header .navigation {
+    display: none;
+  }
+  header .mobile-nav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .mobile-nav .mobile-logo {
+    width: 30%;
+  }
+  .hero {
+    display: none;
+  }
+}
+main .our-work {
+  padding: 20px var(--px);
+  display: flex;
+  flex-direction: column;
+}
+main .our-work .work {
+  margin-bottom: 2rem;
+}
+main .our-work .work h1 {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+}
+main .our-work .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .our-work .grid img {
+  width: 90%;
+  height: 90%;
+}
+main .our-work .grid h1 {
+  color: black;
+  margin-top: 15px;
+  text-align: center;
+}
+main .digital {
+  padding: 20px var(--px);
+  margin-top: var(--mb);
+  display: flex;
+  flex-direction: column;
+}
+main .digital .divide {
+  margin-bottom: 2rem;
+}
+main .digital .divide h1 {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+}
+main .digital .text-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .digital .text-items img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #555;
+  border-radius: 21% 79% 35% 62%/22% 25% 75% 44%;
+}
+main .digital .text-items .list-items {
+  padding: 0 50px;
+}
+main .digital .text-items .list-items ul li {
+  font-size: 30px;
+}
+main .digital .text-items .list-items ul li p {
+  font-size: 26px;
+  color: black;
+  text-align: justify;
+}
+main .steam {
+  padding: 120px var(--px);
+  margin-top: var(--mb);
+  background: url(./images/boot.png);
+  background-size: cover;
+}
+main .steam .heading h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+main .steam .skills {
+  font-size: 2.3rem;
+  color: white;
+}
+main .steam .skills .code {
+  margin-bottom: 2rem;
+}
+main .steam .skills .code p {
+  font-weight: 900;
+}
+main .steam .skills .date p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+main .steam .button-classes {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+main .steam .button-classes button {
+  background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%);
+  border: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+main .steam .button-classes button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  padding: 120px var(--px);
+  background: url(./images/wave1.svg);
+  background-size: cover;
+}
+footer .support h1 {
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .icons img {
+  position: relative;
+  top: 60px;
+  width: 70%;
+  height: 70%;
+}/*# sourceMappingURL=style.css.map */

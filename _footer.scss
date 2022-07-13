@@ -1,0 +1,22 @@
+footer {
+	padding: 120px var(--px);
+	background: url(./images/wave1.svg);
+	background-size: cover;
+	.support h1 {
+		color: black;
+		font-size: 4rem;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	.icons {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		img {
+			position: relative;
+			top: 60px;
+			width: 70%;
+			height: 70%;
+		}
+	}
+}
