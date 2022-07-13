@@ -125,36 +125,11 @@ header .hero .btn button:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1000px) {
-  header {
-    padding: 60px 60px;
-    background: url(./images/background.png) no-repeat;
-    background-size: contain;
-  }
-  header ul {
-    gap: 1rem;
-  }
-  header .logo img {
-    margin-top: -10px;
-    height: 50%;
-    width: 50%;
-  }
-  header .navbar {
-    margin-top: 0;
-  }
-  header .navbar li {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 375px) {
   :root {
     --hero-bg-color: rgb(29, 158, 235);
     --px: 25px; /*padding left n right*/
-    --mb: 100px; /* margin bottom*/
-  }
-  .main-container {
-    max-width: 375px;
-    margin: auto;
+    --mb: 50px; /* margin bottom*/
   }
   header {
     min-height: 100%;
@@ -304,6 +279,70 @@ main .steam .button-classes button:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 375px) {
+  main .our-work {
+    padding: 10px 25px;
+    margin-top: -30px;
+  }
+  main .our-work .work {
+    margin-bottom: 1.5rem;
+  }
+  main .our-work .work h1 {
+    font-size: 2rem;
+  }
+  main .our-work .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  main .our-work .grid img {
+    width: 100%;
+    height: 100%;
+  }
+  main .our-work .grid h1 {
+    margin-top: 5px;
+  }
+  main .digital {
+    padding: 10px 25px;
+  }
+  main .digital .divide h1 {
+    font-size: 2rem;
+  }
+  main .digital .text-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .digital .text-items .list-items {
+    padding: 0 25px;
+  }
+  main .digital .text-items .list-items ul li p {
+    font-size: 20px;
+  }
+  main .steam {
+    padding: 30px 25px;
+  }
+  main .steam .heading h1 {
+    font-size: 2rem;
+  }
+  main .steam .skills {
+    font-size: 1.5rem;
+  }
+  main .steam .skills .date p {
+    font-size: 1.5rem;
+  }
+  main .steam .button-classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 40%;
+  }
+  main .steam .button-classes button {
+    text-align: center;
+    padding: 10px 27px;
+    font-size: 10px;
+  }
+}
 footer {
   padding: 120px var(--px);
   background: url(./images/wave1.svg);
@@ -324,4 +363,27 @@ footer .icons img {
   top: 60px;
   width: 70%;
   height: 70%;
+}
+
+@media screen and (max-width: 375px) {
+  footer {
+    height: 100vh;
+    padding: 60px 25px;
+    background: none yellow;
+    align-items: center;
+  }
+  footer .support h1 {
+    font-size: 2.5rem;
+  }
+  footer .icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  footer .icons img {
+    padding: 0 50px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

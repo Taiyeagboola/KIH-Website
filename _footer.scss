@@ -20,3 +20,26 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 375px) {
+	footer {
+		height: 100vh;
+		padding: 60px 25px;
+		background: none yellow;
+		align-items: center;
+		.support h1 {
+			font-size: 2.5rem;
+		}
+		.icons {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			img {
+				padding: 0 50px;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

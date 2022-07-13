@@ -121,3 +121,77 @@ main {
 		}
 	}
 }
+
+@media screen and (max-width: 375px) {
+	main {
+		.our-work {
+			padding: 10px 25px;
+			margin-top: -30px;
+			.work {
+				margin-bottom: 1.5rem;
+				h1 {
+					font-size: 2rem;
+				}
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 3rem;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+				h1 {
+					margin-top: 5px;
+				}
+			}
+		}
+
+		.digital {
+			padding: 10px 25px;
+			.divide {
+				h1 {
+					font-size: 2rem;
+				}
+			}
+			.text-items {
+				display: grid;
+				grid-template-columns: 1fr;
+				.list-items {
+					padding: 0 25px;
+					ul li p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		.steam {
+			padding: 30px 25px;
+			.heading h1 {
+				font-size: 2rem;
+			}
+			.skills {
+				font-size: 1.5rem;
+				.date {
+					p {
+						font-size: 1.5rem;
+					}
+				}
+			}
+			.button-classes {
+				display: flex;
+				flex-direction: column;
+				// align-items: center;
+				justify-content: center;
+				gap: 2rem;
+				width: 40%;
+				button {
+					text-align: center;
+					padding: 10px 27px;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
