@@ -1,14 +1,9 @@
 main {
-	// margin-top: var(--mb);
 	.our-work {
 		padding: 20px var(--px);
 		display: flex;
 		flex-direction: column;
-		// background: linear-gradient(
-		// 	0deg,
-		// 	rgba(232, 232, 232, 1) 0%,
-		// 	rgba(255, 255, 255, 1) 93%
-		// );
+
 		.work {
 			margin-bottom: 2rem;
 			h1 {
@@ -37,11 +32,7 @@ main {
 		margin-top: var(--mb);
 		display: flex;
 		flex-direction: column;
-		// background: linear-gradient(
-		// 	0deg,
-		// 	rgba(232, 232, 232, 1) 0%,
-		// 	rgba(255, 255, 255, 1) 93%
-		// );
+
 		.divide {
 			margin-bottom: 2rem;
 			h1 {
