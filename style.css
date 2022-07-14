@@ -125,6 +125,92 @@ header .hero .btn button:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  :root {
+    --px: 40px;
+    --mb: 80px;
+  }
+  header {
+    padding: 40px var(--px);
+    background: url(./images/background.png);
+    background-size: cover;
+    margin-bottom: var(--mb);
+  }
+  header .hero {
+    margin-top: 100px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  :root {
+    --px: 70px;
+  }
+  header {
+    padding: 30px var(--px);
+    background: url(./images/background.png);
+    background-size: cover;
+  }
+  header .navigation {
+    font-size: 14px;
+  }
+  header .navigation .navbar {
+    margin-top: -45px;
+  }
+  header .navigation .logo img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 980px) {
+  header {
+    background: url(./images/background.png);
+    background-size: cover;
+    padding: 50px 50px;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .mobile-nav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .hero {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 765px) {
+  header {
+    background: url(./images/mobile-bg.png);
+    background-size: cover;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    background: url(./images/mobile-bg.png);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    background: url(./images/mobile-bg.png);
+    background-size: cover;
+  }
+  header .mobile-nav .mobile-logo {
+    width: 40%;
+  }
+  header .hero {
+    width: 100%;
+  }
+  header .hero .text-body h1 {
+    font-size: 1.8rem;
+  }
+  header .hero .btn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 375px) {
   :root {
     --hero-bg-color: rgb(29, 158, 235);
@@ -292,8 +378,8 @@ main .steam .button-classes button:hover {
   }
   main .our-work .grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
   }
   main .our-work .grid img {
     width: 100%;
@@ -343,6 +429,82 @@ main .steam .button-classes button:hover {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 1200px) {
+  :root {
+    --px: 40px;
+    --mb: 80px;
+  }
+  main .our-work {
+    padding: 20px var(--px);
+    margin-top: -1.5rem;
+  }
+  main .our-work .work {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .steam {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 980px) {
+  main .our-work {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 765px) {
+  main .our-work {
+    padding: 20px 30px;
+  }
+  main .our-work .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  main .our-work .grid img {
+    width: 100%;
+  }
+  main .digital {
+    padding: 20px 30px;
+  }
+  main .digital .text-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  main .steam {
+    padding: 20px 30px;
+  }
+  main .steam .heading h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .our-work .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .digital {
+    padding: 10px 30px;
+  }
+  main .digital .divide h1 {
+    font-size: 2rem;
+  }
+  main .digital .text-items .list-items ul li p {
+    font-size: 18px;
+  }
+  main .steam {
+    padding: 10px 30px;
+  }
+  main .steam .button-classes {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
 footer {
   padding: 120px var(--px);
   background: url(./images/wave1.svg);
@@ -367,8 +529,8 @@ footer .icons img {
 
 @media screen and (max-width: 375px) {
   footer {
-    height: 100vh;
-    padding: 60px 25px;
+    height: 100vh !important;
+    padding: 60px 40px;
     background: none yellow;
     align-items: center;
   }
@@ -377,12 +539,58 @@ footer .icons img {
   }
   footer .icons {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+    padding: 0 50px;
+  }
+  footer .icons img {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  :root {
+    --px: 40px;
+    --mb: 80px;
+  }
+  footer {
+    padding: 120px var(--px);
+  }
+}
+@media screen and (max-width: 576px) {
+  footer {
+    height: 65vh;
+    background: yellow;
+    padding: 110px 25px;
+  }
+  footer .support h1 {
+    font-size: 2.3rem;
+  }
+  footer .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
   footer .icons img {
-    padding: 0 50px;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    height: 90vh;
+  }
+  footer .support h1 {
+    font-size: 3rem;
+  }
+  footer .icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 90px !important;
+  }
+  footer .icons img {
     width: 100%;
     height: 100%;
   }

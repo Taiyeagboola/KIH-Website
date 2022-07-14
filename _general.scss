@@ -142,6 +142,101 @@ header {
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	:root {
+		--px: 40px;
+		--mb: 80px;
+	}
+	header {
+		padding: 40px var(--px);
+		background: url(./images/background.png);
+		background-size: cover;
+		margin-bottom: var(--mb);
+		.hero {
+			margin-top: 100px;
+			width: 60%;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	:root {
+		--px: 70px;
+	}
+	header {
+		padding: 30px var(--px);
+		background: url(./images/background.png);
+		background-size: cover;
+		.navigation {
+			font-size: 14px;
+			.navbar {
+				margin-top: -45px;
+			}
+			.logo img {
+				width: 70%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 980px) {
+	header {
+		background: url(./images/background.png);
+		background-size: cover;
+		padding: 50px 50px;
+		.navigation {
+			display: none;
+		}
+
+		.mobile-nav {
+			display: block;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.hero {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 765px) {
+	header {
+		background: url(./images/mobile-bg.png);
+		background-size: cover;
+		padding: 20px 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	header {
+		background: url(./images/mobile-bg.png);
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header {
+		background: url(./images/mobile-bg.png);
+		background-size: cover;
+		.mobile-nav {
+			.mobile-logo {
+				width: 40%;
+			}
+		}
+		.hero {
+			width: 100%;
+			.text-body h1 {
+				font-size: 1.8rem;
+			}
+			.btn {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 375px) {
 	:root {
 		--hero-bg-color: rgb(29, 158, 235);

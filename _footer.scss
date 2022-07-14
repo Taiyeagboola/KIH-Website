@@ -23,8 +23,8 @@ footer {
 
 @media screen and (max-width: 375px) {
 	footer {
-		height: 100vh;
-		padding: 60px 25px;
+		height: 100vh !important;
+		padding: 60px 40px;
 		background: none yellow;
 		align-items: center;
 		.support h1 {
@@ -32,11 +32,63 @@ footer {
 		}
 		.icons {
 			display: grid;
-			grid-template-columns: 1fr;
+			grid-template-columns: 1fr !important;
+			gap: 3rem;
+			padding: 0 50px;
+			img {
+				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	:root {
+		--px: 40px;
+		--mb: 80px;
+	}
+	footer {
+		padding: 120px var(--px);
+	}
+}
+
+@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 576px) {
+	footer {
+		height: 65vh;
+		background: yellow;
+		padding: 110px 25px;
+		.support h1 {
+			font-size: 2.3rem;
+		}
+		.icons {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 			gap: 3rem;
 			img {
-				padding: 0 50px;
-				align-items: center;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		height: 90vh;
+		.support h1 {
+			font-size: 3rem;
+		}
+		.icons {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			padding: 0 90px !important;
+			img {
 				width: 100%;
 				height: 100%;
 			}
