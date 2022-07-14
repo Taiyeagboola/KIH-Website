@@ -254,6 +254,11 @@ header .hero .btn button:hover {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 408px) {
+  header .hero .btn {
+    width: 60%;
+  }
+}
 main .our-work {
   padding: 20px var(--px);
   display: flex;

@@ -281,3 +281,13 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: 408px) {
+	header {
+		.hero {
+			.btn {
+				width: 60%;
+			}
+		}
+	}
+}
